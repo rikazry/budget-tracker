@@ -33,4 +33,4 @@ class MonthlyPlan(Plan):
     def __init__(self, party_num):
         super(MonthlyPlan, self).__init__(party_num, 12)
         for i in range(getattr(self, 'party_num')):
-            self.update_income('Pay', 0)
+            self.update_income('Pay', 0, i+1)
